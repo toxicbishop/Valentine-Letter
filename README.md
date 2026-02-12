@@ -9,7 +9,7 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 ## 📸 Screenshots
 
 |                                Opening the Letter                                |                                The Celebration                                |
-| :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+|:--------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
 |  ![Opening the Letter](Public/Screenshots/Screenshot%202026-02-11%20205331.png)  |  ![The Celebration](Public/Screenshots/Screenshot%202026-02-11%20205344.png)  |
 
 ## 📂 Project Structure
@@ -26,14 +26,15 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 
 ## 🚀 How to Run
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/toxicbishop/Valentine-Letter.git
-    cd "Valentine Letter"
-    ```
+1. **Clone the Repository:**
 
-2.  **Open the Project:**
-    Simply open `index.html` in your favorite web browser or use a Live Server extension in VS Code.
+   ```bash
+   git clone https://github.com/toxicbishop/Valentine-Letter.git
+   cd "Valentine Letter"
+   ```
+
+2. **Open the Project:**
+   Simply open `index.html` in your favorite web browser or use a Live Server extension in VS Code.
 
 ## 🎨 Assets Used
 
