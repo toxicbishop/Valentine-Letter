@@ -2,10 +2,6 @@
 
 A charming, interactive web-based Valentine's letter designed to deliver a special message with a touch of playfulness and many cute cats.
 
-## 📺 Project Demo
-
-[![Watch Project Demo](Public/Screenshots/Screenshot%202026-02-11%20205331.png)](Public/Screenshots/demo.mp4)
-
 ## 📸 Screenshots
 
 |                                Opening the Letter                                |                                The Celebration                                |
