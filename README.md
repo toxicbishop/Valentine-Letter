@@ -2,7 +2,7 @@
 
 A charming, interactive web-based Valentine's letter designed to deliver a special message with a touch of playfulness and many cute cats.
 
-## 📸 Screenshots
+## Preview
 
 | Letter | The Celebration |
 | :----------------: | :-------------: |
