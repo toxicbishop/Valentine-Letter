@@ -120,7 +120,8 @@ p {
 }
 
 .yes-btn,
-.no-btn {
+.no-btn,
+.maybe-btn {
   width: clamp(80px, 22vw, 120px);
   height: auto;
   display: inline-block;
@@ -133,7 +134,8 @@ p {
   transition: transform 0.3s ease;
 }
 
-.no-btn {
+.no-btn,
+.maybe-btn {
   z-index: 1000;
   position: relative;
   transition:
@@ -141,39 +143,6 @@ p {
     left 0.3s ease,
     top 0.3s ease;
   cursor: default;
-}
-
-.final-text {
-  font-size: clamp(16px, 3.5vw, 22px);
-  line-height: 1.4;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(255, 240, 240, 0.9);
-  border-radius: 12px;
-  margin-top: 10px;
-  max-width: 90%;
-}
-
-.maybe-btn {
-  background: #e9b9c9; /* Matching the pinkish background of current images */
-  border: 4px solid #c9184a;
-  border-bottom: 8px solid #c9184a;
-  border-right: 8px solid #c9184a;
-  color: #c9184a;
-  font-family: "Pixelify Sans", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 5px 15px;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: 4px 4px 0px #b7d1b1; /* Mimicking the green shadow in yes.png */
-  transition: all 0.1s active;
-}
-
-.maybe-btn:active {
-  box-shadow: none;
-  transform: translate(4px, 4px);
 }
 
 .speech-bubble {
@@ -201,6 +170,18 @@ p {
   border-style: solid;
   border-color: white transparent transparent transparent;
   transform: translateX(-50%);
+}
+
+.final-text {
+  font-size: clamp(16px, 3.5vw, 22px);
+  line-height: 1.4;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 240, 240, 0.9);
+  border-radius: 12px;
+  margin-top: 10px;
+  max-width: 90%;
 }
 
 /* Hide fallback text inside container since we are back to original */

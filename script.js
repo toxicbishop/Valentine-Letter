@@ -8,6 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
+
 const heartsContainer = document.getElementById("hearts-container");
 const speechBubble = document.getElementById("cat-speech");
 
@@ -25,7 +26,6 @@ const compliments = [
 ];
 
 // Function to create floating hearts
-// ... (omitting existing createHeart for brevity in replace tool)
 function createHeart() {
   const heart = document.createElement("div");
   heart.classList.add("heart");
@@ -94,10 +94,6 @@ noBtn.addEventListener("click", moveNoButton);
 
 // Maybe Button Prank
 maybeBtn.addEventListener("mouseover", () => {
-  const responses = ["Really?", "Try again!", "Nope 😜", "Pick Yes!"];
-  maybeBtn.textContent =
-    responses[Math.floor(Math.random() * responses.length)];
-
   // Random move like No button but less extreme
   const x = (Math.random() - 0.5) * 150;
   const y = (Math.random() - 0.5) * 150;
@@ -105,11 +101,8 @@ maybeBtn.addEventListener("mouseover", () => {
 });
 
 maybeBtn.addEventListener("click", () => {
-  // Turn into Yes button if they finally manage to click it
-  maybeBtn.textContent = "YES! ❤️";
-  setTimeout(() => {
-    yesBtn.click();
-  }, 500);
+  // Trigger Yes button celebration
+  yesBtn.click();
 });
 
 // Click the Cat for Compliments
