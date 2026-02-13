@@ -11,12 +11,19 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 ## 📂 Project Structure
 
 ```bash
-├── index.html          # Main structure
-├── script.js           # Interactive logic
-├── style.css           # Styling and animations
-├── Public/             # Assets folder
-│   ├── Screenshots/    # Demo video and images
-│   └── ...             # Other assets
+├── index.html          # Main page structure
+├── script.js           # Interactive logic and heart animations
+├── style.css           # Styling, transitions, and responsive design
+├── Public/             # Static resources
+│   ├── assets/         # Main assets (images, gifs, favicon)
+│   │   ├── cat_heart.gif
+│   │   ├── cat_dance.gif
+│   │   ├── envelope.png
+│   │   ├── yes.png
+│   │   ├── no.png
+│   │   ├── maybe.png
+│   │   └── ... 
+│   └── Screenshots/    # Demo images
 └── README.md           # Project documentation
 ```
 
@@ -36,7 +43,7 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 
 - `cat_heart.gif`: The greeting cat.
 - `cat_dance.gif`: The celebratory cat.
-- Custom pixel-art buttons (`yes.png`, `no.png`).
+- Custom pixel-art buttons (`yes.png`, `no.png`, `maybe.png`).
 - `heart-bg.jpg`: Background image.
 
 ## ❤️ Credits
