@@ -21,14 +21,14 @@ function createHeart() {
   // Randomize appearance
   const startX = Math.random() * 100; // 0 to 100vw
   const duration = Math.random() * 3 + 4; // 4 to 7 seconds
-  const scale = Math.random() * 0.8 + 0.5; // 0.5 to 1.3
+  const scale = Math.random() * 1.5 + 1.0; // 1.0 to 2.5 (Way Bigger!)
   const drift = (Math.random() - 0.5) * 200; // -100 to 100px horizontal drift
 
   heart.style.left = startX + "vw";
   heart.style.setProperty("--duration", duration + "s");
   heart.style.setProperty("--scale", scale);
   heart.style.setProperty("--drift", drift + "px");
-  heart.style.fontSize = Math.random() * 20 + 10 + "px";
+  heart.style.fontSize = Math.random() * 30 + 25 + "px"; // Much bigger base font
 
   heartsContainer.appendChild(heart);
 
@@ -38,8 +38,8 @@ function createHeart() {
   }, duration * 1000);
 }
 
-// Generate hearts periodically
-setInterval(createHeart, 300);
+// Generate hearts more frequently
+setInterval(createHeart, 150);
 
 // --- Interactions ---
 
