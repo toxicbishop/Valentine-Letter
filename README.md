@@ -45,7 +45,3 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 - `cat_dance.gif`: The celebratory cat.
 - Custom pixel-art buttons (`yes.png`, `no.png`, `maybe.png`).
 - `heart-bg.jpg`: Background image.
-
-## ❤️ Credits
-
-Made with ❤️ and a little bit of code. This project features adorable cat themes to make your Valentine's Day special!
