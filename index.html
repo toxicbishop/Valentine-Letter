@@ -9,20 +9,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet" />
   <title>Will you be my Valentine? ♡</title>
-  <meta name="description" content="A special digital Valentine's letter just for you." />
 </head>
 
 <body>
-  <!-- Floating Hearts Container -->
-  <div id="hearts-container"></div>
-
   <!-- Envelope Screen -->
   <div id="envelope-container">
     <img src="Public/assets/envelope.png" alt="Envelope" id="envelope" />
-    <p>Click to open the letter ♡</p>
+    <p>♡ Letter for You ♡</p>
   </div>
 
   <!-- Letter Screen -->
@@ -33,8 +29,11 @@
       <img src="Public/assets/cat_heart.gif" class="cat" id="letter-cat" />
 
       <div class="buttons" id="letter-buttons">
-        <button class="btn yes-btn">Yes</button>
-        <button class="btn no-btn">No</button>
+        <img src="Public/assets/yes.png" class="btn yes-btn" alt="Yes" />
+
+        <div class="no-wrapper">
+          <img src="Public/assets/no.png" class="btn no-btn" alt="No" />
+        </div>
       </div>
 
       <p id="final-text" class="final-text" style="display: none">
