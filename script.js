@@ -8,8 +8,36 @@ const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 
+const heartsContainer = document.getElementById("hearts-container");
+
 let noClickCount = 0;
 let yesScale = 1;
+
+// Function to create floating hearts
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤";
+
+  // Randomize appearance
+  const startX = Math.random() * 100; // 0 to 100vw
+  const duration = Math.random() * 3 + 4; // 4 to 7 seconds
+  const scale = Math.random() * 1.5 + 0.8; // 0.8 to 2.3
+  const drift = (Math.random() - 0.5) * 200; // -100 to 100px horizontal drift
+
+  heart.style.left = startX + "vw";
+  heart.style.setProperty("--duration", duration + "s");
+  heart.style.setProperty("--scale", scale);
+  heart.style.setProperty("--drift", drift + "px");
+  heart.style.fontSize = Math.random() * 20 + 15 + "px";
+
+  heartsContainer.appendChild(heart);
+
+  // Remove heart after animation
+  setTimeout(() => {
+    heart.remove();
+  }, duration * 1000);
+}
 
 // Click Envelope
 envelope.addEventListener("click", () => {
@@ -60,4 +88,12 @@ yesBtn.addEventListener("click", () => {
   document.querySelector(".letter-window").classList.add("final");
   buttons.style.display = "none";
   finalText.style.display = "block";
+
+  // Start continuous heart rain
+  setInterval(createHeart, 200);
+
+  // Initial burst of hearts
+  for (let i = 0; i < 20; i++) {
+    setTimeout(createHeart, i * 100);
+  }
 });

@@ -162,6 +162,30 @@ p {
   margin-top: 20px;
 }
 
+/* Floating Hearts */
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 50;
+  animation: floatUp var(--duration) linear forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(110vh) translateX(0) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(var(--drift)) scale(var(--scale));
+    opacity: 0;
+  }
+}
+
 /* Small heights (landscape phones) */
 @media (max-height: 500px) {
   .letter-window {
