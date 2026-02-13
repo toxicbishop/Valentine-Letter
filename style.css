@@ -165,8 +165,8 @@ p {
 /* Floating Hearts */
 .heart {
   position: absolute;
-  color: #ff4d6d;
-  opacity: 0.6;
+  color: #c9184a; /* Deeper, more romantic red */
+  opacity: 0.8; /* Slightly more visible */
   pointer-events: none;
   z-index: 50;
   animation: floatUp var(--duration) linear forwards;
