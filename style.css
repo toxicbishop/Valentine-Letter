@@ -155,6 +155,46 @@ p {
   max-width: 90%;
 }
 
+.maybe-btn {
+  background: #ffdee9;
+  border: 2px solid #ff4d6d;
+  border-radius: 50px;
+  color: #ff4d6d;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  transition: all 0.2s ease;
+}
+
+.speech-bubble {
+  position: absolute;
+  background: white;
+  border: 2px solid #ff4d6d;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 16px;
+  color: #4a4e69;
+  z-index: 200;
+  bottom: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
 /* Hide fallback text inside container since we are back to original */
 #envelope-container p {
   font-size: clamp(16px, 4vw, 20px);
