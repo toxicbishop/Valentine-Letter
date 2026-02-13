@@ -98,11 +98,31 @@ maybeBtn.addEventListener("mouseover", () => {
   const x = (Math.random() - 0.5) * 150;
   const y = (Math.random() - 0.5) * 150;
   maybeBtn.style.transform = `translate(${x}px, ${y}px)`;
+
+  // Show a funny message from the cat
+  const maybeMessages = [
+    "Error 404: 'Maybe' not found! 😹",
+    "Is that a 'Yes' with a mustache? 🥸",
+    "Think of the tuna! 🐟",
+    "Pleease? I'll share my milk! 🥺",
+  ];
+  speechBubble.textContent =
+    maybeMessages[Math.floor(Math.random() * maybeMessages.length)];
+  speechBubble.style.display = "block";
+
+  setTimeout(() => {
+    if (!isFinal) speechBubble.style.display = "none";
+  }, 2000);
 });
 
 maybeBtn.addEventListener("click", () => {
-  // Trigger Yes button celebration
-  yesBtn.click();
+  // One last desperate plea before forcing Yes
+  speechBubble.textContent = "Okay, I'll take that as a YES! ❤️";
+  speechBubble.style.display = "block";
+
+  setTimeout(() => {
+    yesBtn.click();
+  }, 1000);
 });
 
 // Click the Cat for Compliments
