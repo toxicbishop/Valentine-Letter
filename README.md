@@ -4,9 +4,9 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 
 ## 📸 Screenshots
 
-| Opening the Letter | The Celebration |
+| Letter | The Celebration |
 | :----------------: | :-------------: |
-| ![Opening the Letter](Public/Screenshots/Opender%20letter.png) | ![The Celebration](Public/Screenshots/Letter.png) |
+| ![Opening the Letter](Public/Screenshots/Letter.png) | ![The Celebration](Public/Screenshots/Opender%20letter.png) |
 
 ## 📂 Project Structure
 
