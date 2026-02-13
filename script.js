@@ -80,6 +80,24 @@ function moveNoButton() {
   noBtn.style.top = randomY + "px";
   noBtn.style.zIndex = "999";
 
+  // Show a funny message from the cat for the NO button
+  const noMessages = [
+    "Hey! Stop mirror-clicking! 🙀",
+    "My heart... it's breaking! 💔",
+    "I'm too cute for a 'No'! 🐾",
+    "Did your mouse slip? 🖱️",
+    "I guess I'll just eat my feelings... 🧀",
+    "You're making me cry! 😿",
+    "Abort! Abort! Click Yes instead! 🚨",
+  ];
+  speechBubble.textContent =
+    noMessages[Math.floor(Math.random() * noMessages.length)];
+  speechBubble.style.display = "block";
+
+  setTimeout(() => {
+    if (!isFinal) speechBubble.style.display = "none";
+  }, 2000);
+
   // Shrink the No button slightly and Grow the Yes button
   noClickCount++;
   const noScale = Math.max(0.4, 1 - noClickCount * 0.08);
