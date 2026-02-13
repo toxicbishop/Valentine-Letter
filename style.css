@@ -156,16 +156,24 @@ p {
 }
 
 .maybe-btn {
-  background: #ffdee9;
-  border: 2px solid #ff4d6d;
-  border-radius: 50px;
-  color: #ff4d6d;
-  font-family: inherit;
-  font-size: 16px;
+  background: #e9b9c9; /* Matching the pinkish background of current images */
+  border: 4px solid #c9184a;
+  border-bottom: 8px solid #c9184a;
+  border-right: 8px solid #c9184a;
+  color: #c9184a;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 18px;
   font-weight: bold;
-  height: 40px;
-  width: 100px;
-  transition: all 0.2s ease;
+  padding: 5px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0px #b7d1b1; /* Mimicking the green shadow in yes.png */
+  transition: all 0.1s active;
+}
+
+.maybe-btn:active {
+  box-shadow: none;
+  transform: translate(4px, 4px);
 }
 
 .speech-bubble {
