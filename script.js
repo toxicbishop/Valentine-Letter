@@ -72,6 +72,7 @@ function moveNoButton() {
   noBtn.style.position = "fixed";
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
+  noBtn.style.zIndex = "999";
 
   // Shrink the No button and Grow the Yes button
   noClickCount++;
@@ -85,7 +86,6 @@ function moveNoButton() {
   if (noClickCount === 3) noBtn.textContent = "Are you sure?";
   if (noClickCount === 5) noBtn.textContent = "Think again!";
   if (noClickCount === 8) noBtn.textContent = "Please? 🥺";
-  if (noClickCount >= 10) noBtn.style.display = "none"; // Disappear after 10 tries
 }
 
 noBtn.addEventListener("mouseover", moveNoButton);
