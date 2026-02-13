@@ -94,7 +94,7 @@ noBtn.addEventListener("click", moveNoButton);
 // YES is clicked
 yesBtn.addEventListener("click", () => {
   title.textContent = "Yippeeee! I love you! ❤️";
-  catImg.src = "cat_dance.gif";
+  catImg.src = "Public/assets/cat_dance.gif";
 
   // Final UI cleanup
   buttons.style.display = "none";
