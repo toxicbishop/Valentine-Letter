@@ -1,4 +1,4 @@
-# 💌 Interactive Valentine Letter
+# Interactive Valentine Letter
 
 A charming, interactive web-based Valentine's letter designed to deliver a special message with a touch of playfulness and many cute cats.
 
@@ -8,7 +8,7 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 | :----------------: | :-------------: |
 | ![Opening the Letter](Public/Screenshots/Letter.png) | ![The Celebration](Public/Screenshots/Opender%20letter.png) |
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 ├── index.html          # Main page structure
@@ -27,7 +27,7 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 └── README.md           # Project documentation
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone the Repository:**
 
@@ -39,7 +39,7 @@ A charming, interactive web-based Valentine's letter designed to deliver a speci
 2. **Open the Project:**
    Simply open `index.html` in your favorite web browser or use a Live Server extension in VS Code.
 
-## 🎨 Assets Used
+## Assets Used
 
 - `cat_heart.gif`: The greeting cat.
 - `cat_dance.gif`: The celebratory cat.
