@@ -54,24 +54,23 @@ body {
 .letter-window {
   width: 95vw;
   max-width: 600px;
-  min-height: 400px;
+  aspect-ratio: 5000 / 4563;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   background-image: url("Public/assets/window.png");
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 12px;
   box-sizing: border-box;
   position: relative;
 
-  /* Flexible padding to account for the frame in the PNG */
-  padding-top: 25%;
-  padding-bottom: 50px;
+  /* Align content inside the window's checkerboard area */
+  padding-top: 25%; 
+  padding-bottom: 15%;
 
   transform: scale(0.9);
   opacity: 0;
@@ -117,7 +116,8 @@ p {
   gap: clamp(10px, 4vw, 30px);
   position: relative;
   width: 100%;
-  margin-top: 10px;
+  margin-top: auto; /* Push to the bottom of the window frame */
+  padding-bottom: 10px;
 }
 
 .btn {
@@ -225,7 +225,6 @@ p {
 /* Small heights (landscape phones) */
 @media (max-height: 500px) {
   .letter-window {
-    min-height: 300px;
     padding-top: 20%;
   }
   .cat {
